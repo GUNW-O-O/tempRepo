@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="190.0" layoutY="22.0" prefHeight="47.0" prefWidth="221.0" text="뭐먹지?">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Pane focusTraversable="true" layoutX="151.0" layoutY="92.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="285.0" fitWidth="285.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="menu" alignment="CENTER" layoutX="186.0" layoutY="392.0" prefHeight="74.0" prefWidth="230.0" textFill="#0080ff">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="button" layoutX="194.0" layoutY="486.0" mnemonicParsing="false" onAction="#random" prefHeight="80.0" prefWidth="215.0" text="추천">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
